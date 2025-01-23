@@ -1,3 +1,8 @@
+# String Sepeartion GUI(Graphical User Interface) using tkinter library
+
+
+
+
 from tkinter import *
 from tkinter import messagebox
 

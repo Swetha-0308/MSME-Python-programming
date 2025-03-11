@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Menu</title>
+</head>
+<body>
+    <h1>Hotel Menu</h1>
+    <form method="post">
+        <table border="1">
+            <tr>
+                <th>Dish</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+            {% for dish_id, dish in menu.items() %}
+            <tr>
+                <td>{{ dish.name }}</td>
+                <td>{{ dish.price }}</td>
+                <td>
+                    <input type="checkbox" name="dish" value="{{ dish_id }}">
+                    <input type="number" name="quantity" placeholder="enter the quantity" min=1>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

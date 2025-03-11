@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+        <h1>Simple Calculator</h1>
+        <form method="POST">
+            <input type="number" name="num1" placeholder="Number 1" required><br>
+            <input type="number" name="num2" placeholder="Number 2" required><br>
+            <select name="operator">
+                <option value="add">addition(+)</option>
+                <option value="subtraction">subtraction(-)</option>
+                <option value="multiplication">multiplication(*)</option>
+                <option value="divide">divide(/)</option>
+            </select><br>
+            <button type="submit">Calculate</button>
+        </form>
+            <p>Result: {{ result }}</p>
+</body>
+</html>
